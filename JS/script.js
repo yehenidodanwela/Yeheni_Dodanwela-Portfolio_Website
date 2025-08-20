@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
     applyTheme(initialTheme);
 
+    // Ensure theme is reapplied when navigating back/forward (BFCache)
+    window.addEventListener('pageshow', function () {
+        const current = localStorage.getItem('theme') || 'light';
+        applyTheme(current);
+    });
+
     // Toggle button
     const toggleBtn = document.getElementById('theme-toggle');
     if (toggleBtn) {
