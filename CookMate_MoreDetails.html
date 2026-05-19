@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeheni Dodanwela - Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/style-ProjectDetails.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html#home">Yeheni Dodanwela</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#journey">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn ms-3 d-flex align-items-center">
+          <img id="theme-icon" src="Images/Light_Theme_Icons/ThemeToggle.svg" alt="Theme Icon">
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Details Section -->
+  <section class="project-details container">
+    <div class="row g-5">
+      <!-- Left Column -->
+      <div class="col-lg-6">
+        <h2 class="project-title">CookMate Mobile Application</h2>
+        <p class="project-dates">Oct 2025 - Mar 2026</p>
+        <p class="project-description">Developed CookMate, a smart cooking companion mobile application designed to enhance the cooking experience using AI-powered recipe recommendations and IoT-based smart kitchen support. The application allows users to generate recipes based on available ingredients, dietary preferences, and allergy restrictions.
+
+        </br>Implemented interactive cooking guidance with text-to-speech, voice alerts, timers, and audio controls to improve accessibility and usability. Integrated IoT functionality using Arduino and MQTT for real-time cooking temperature monitoring. The project included frontend and backend development, API integration, authentication systems, and deployment workflows using Render and Expo Go.</p>
+
+        <!-- GitHub Button -->
+        <div class="my-3">
+          <a href="https://github.com/yehenidodanwela/CookMate" 
+             class="btn btn-dark d-flex align-items-center gap-2">
+            <img src="Images/Light_Theme_Icons/Open.svg" class="btn-dark-icon"> GitHub
+          </a>
+          <a href="https://github.com/yehenidodanwela/CookMate/releases" class="btn btn-outline-dark">Download App</a>
+        </div>
+
+        <!-- Technologies -->
+        <div>
+            <h5>Technologies Used:</h5>
+            <span class="badge bg-secondary">React Native</span>
+            <span class="badge bg-secondary">Node.js</span>
+            <span class="badge bg-secondary">Express.js</span>
+            <span class="badge bg-secondary">TypeScript</span>
+            <span class="badge bg-secondary">MongoDB</span>
+            <span class="badge bg-secondary">Firebase</span>
+            <span class="badge bg-secondary">Arduino</span>
+            <span class="badge bg-secondary">MQTT</span>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-6">
+        <!-- Carousel -->
+        <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Images/CookMate/1.png" class="d-block w-100" alt="Screenshot 1">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/2.png" class="d-block w-100" alt="Screenshot 2">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/3.png" class="d-block w-100" alt="Screenshot 3">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/4.png" class="d-block w-100" alt="Screenshot 4">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/5.png" class="d-block w-100" alt="Screenshot 5">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/6.png" class="d-block w-100" alt="Screenshot 6">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/7.png" class="d-block w-100" alt="Screenshot 7">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/8.png" class="d-block w-100" alt="Screenshot 8">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/9.png" class="d-block w-100" alt="Screenshot 9">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/10.png" class="d-block w-100" alt="Screenshot 10">
+            </div>
+            <div class="carousel-item">
+              <img src="Images/CookMate/11.png" class="d-block w-100" alt="Screenshot 11">
+            </div>
+          </div>
+
+          <!-- Custom SVG Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <img src="Images/Light_Theme_Icons/CarouselLeft.svg" alt="Prev" class="prev-button">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <img src="Images/Light_Theme_Icons/CarouselRight.svg" alt="Next" class="next-button">
+          </button>
+        </div>
+
+        <!-- Key Features -->
+        <h5>Key Features:</h5>
+        <ul class="features-list">
+          <li>AI-powered personalized recipe generation.</li>
+          <li>Ingredient based recipe recommendations.</li>
+          <li>Dietary preference and allergy filtering.</li>
+          <li>Step-by-step cooking guidance system.</li>
+          <li>Text-to-speech and voice alert integration.</li>
+          <li>Built-in cooking timers and mute controls.</li>
+          <li>IoT integration using Arduino and MQTT.</li>
+          <li>Real time cooking temperature monitoring.</li>
+          <li>Mobile frontend and backend system development.</li>
+          <li>APK generation and deployment workflows.</li>
+          <li>GitHub collaboration and CI/CD integration.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
