@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeProjectImageLightbox();
 
     // Initialize typed subtitle
-    initTypedSubtitle(['Computer Science Undergraduate', 'Aspiring Full-Stack Software Engineer', 'UI/UX Enthusiast'], 100, 1000);
+    initTypedSubtitle(['Intern UI/UX Engineer', 'Computer Science Undergraduate', 'Aspiring Full-Stack Software Engineer'], 100, 1000);
 
     // Setup scroll reveal targets (add class to common elements)
     document.querySelectorAll('.hero-title, .hero-subtitle, .Hero-text, .hero-img, #projects .project-card, #journey .timeline-item, #contact .contact-panel, #contact .contact-form-panel').forEach(function(el){
