@@ -47,6 +47,17 @@ body.dark .navbar{
     font-weight: 500;
     margin-right: 12px;
     padding: 8px 6px;
+    border-radius: 8px;
+    transition: color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus-visible{
+    color: var(--accent) !important;
+    background-color: rgba(var(--accent-rgb),0.08);
+    transform: translateY(-1px);
+}
+.navbar-nav .nav-link.active{
+    color: var(--accent) !important;
 }
 #theme-toggle{
     height: 34px;
@@ -180,6 +191,9 @@ body.dark .btn-outline-dark:active{
 .skills-title, .projects-title{ color: var(--text); font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 600; margin-top: 36px; }
 
 .skill-card{ background-color: var(--card); padding: 22px; border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); text-align: center; width: 100%; max-width: 340px; min-height: 220px; }
+#skills .skill-card{ max-width: none; width: calc(100% - 40px); margin-inline: auto; }
+#skills .skill-card .row.g-3{ display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+#skills .skill-card .row.g-3 > [class*="col-"]{ width: auto; min-width: 0; }
 .skill-card h3{ color: var(--text); font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 600; }
 
 #projects .row.g-4{ display:flex; flex-wrap:wrap; justify-content:center; padding: 0 20px; }
@@ -672,6 +686,11 @@ body.dark .navbar-nav .nav-link:hover {
     color: var(--accent) !important;
 }
 
+body.dark .navbar-nav .nav-link.active,
+body.dark .navbar-nav .nav-link.active:hover {
+    color: var(--accent) !important;
+}
+
 body.dark .navbar-light .navbar-toggler {
     border-color: var(--border);
 }
@@ -823,6 +842,7 @@ body:not(.dark) .contact-card:hover {
     .hero-title{ font-size: 34px; }
     .hero-subtitle{ font-size: 16px; }
     .card-img-top{ height: 160px; }
+    #skills .skill-card .row.g-3{ grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 /* keep existing responsive navbar behaviour but cleaner */
@@ -853,6 +873,7 @@ body:not(.dark) .contact-card:hover {
         .card-img-top { height: 140px; }
             /* make skill icons smaller on very small screens */
             .skill-icon { width: 32px; height: 32px; }
+            #skills .skill-card .row.g-3{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .project-card .card-body{ min-height: 240px; }
         #about iframe{ height: 280px; }
         .custom-btn-black, .custom-btn-outline{ width: 100%; }
